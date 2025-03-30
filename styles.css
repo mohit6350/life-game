@@ -1,0 +1,114 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+  }
+  
+  .h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 95%; /* Increased to 95% to utilize more width */
+    max-width: 1200px; /* Increased max width */
+  }
+  
+  .input-section {
+    display: flex;
+    width: 100%; /* Ensure input-section uses full width */
+  }
+  
+  .input-sidebar {
+    width: 280px; /* Adjust sidebar width */
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input[type="date"], input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 95%; /* Adjust input widths */
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .results {
+    display: none;
+    margin-left: 20px;
+    flex: 1;
+    width: 100%; /* Ensure results section uses full width */
+  }
+  
+  .dot-display {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%; /* Ensure dot display uses full width */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    max-height: 400px; /* Limit vertical height to prevent excessive scrolling */
+  }
+  
+  .dot {
+    width: 8px; /* Adjusted dot size for more dots per line */
+    height: 8px; /* Adjusted dot size */
+    border-radius: 50%;
+    margin: 1px; /* Adjusted dot margin */
+  }
+  
+  .breakdown {
+    margin-top: 20px;
+  }
+  
+  .color-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .disclaimer {
+    font-size: 0.8em;
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .results {
+    animation: fadeIn 0.5s ease-in-out;
+  }
